@@ -3,7 +3,7 @@ layout: page
 ---
 
 <ul>
- {% assign sorted = (site.github.public_repositories | sort: 'updated_at')%}
+ {% assign sorted = site.github.public_repositories | sort: 'updated_at'%}
  {% for repository in sorted %}
   <li><a href="{{ repository.html_url }}">{{ repository.name }}</a><br />
    Description: {{ repository.description }}<br />
