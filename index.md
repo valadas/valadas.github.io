@@ -1,3 +1,7 @@
+---
+layout: page
+---
+
 ## Github metadata
 
 {% highlight json %}
