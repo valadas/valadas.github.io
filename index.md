@@ -1,3 +1,5 @@
 ## Github metadata
 
-{{ site.github | inspect }}
+{% highlight json %}
+    {{ site.github | json }}
+{% endhighlight %}
