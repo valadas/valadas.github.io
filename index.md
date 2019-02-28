@@ -1,3 +1,3 @@
 ## Github metadata
 
-{{ site.github.project_title }}
+{{ site.github | inspect }}
