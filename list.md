@@ -4,6 +4,7 @@ layout: page
 
 <ul>
  {% assign sorted = site.github.public_repositories | sort: "pushed_at", "last" %}
+ {% assign reversed = sorted | reverse %>
  {% for repository in sorted %}
   <li><a href="{{ repository.html_url }}">{{ repository.name }}</a><br />
    Description: {{ repository.description }}<br />
